@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          money24Client:
+            url: https://api.mexc.com/
+  datasource:
+    url: jdbc:sqlite:rates.db
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+telegram-bot:
+  token: 7085054189:AAHxaT2R22qpdzCVQZRVsQh_U9t9YLSsBsw
+  username: FinanSmartBot
+
+application:
+  region: 3
+  sync-rate-seconds: 60
+  rate:
+    decimal-places: 4
